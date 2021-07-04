@@ -1,7 +1,7 @@
 {
   "name": "webapp",
   "version": "0.1.0",
-  "homepage": "https://luxurior.in/",
+  "homepage": "https://myusername.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
@@ -30,7 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
